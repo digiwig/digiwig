@@ -3,14 +3,15 @@ header("Content-type: text/html; charset=utf-8");
 ?>
 <!DOCTYPE html>
 <html>
-    <title>Digiwig Boilerplate</title>
+    <title>Freelance Web Designer & Web Developer, London | Mark Wigglesworth</title>
     <meta charset="utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">    
     <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
     <meta name="apple-mobile-web-app-title" content="Digiwig">
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-	<link rel='stylesheet' href='_/css/reset.css' type='text/css' media='all' />          
+	<link rel='stylesheet' href='_/css/reset.css' type='text/css' media='all' />
+    <link rel='stylesheet' href='_/css/styles.css' type='text/css' media='all' />          
 </head>
 <body>
 	<script>

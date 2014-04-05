@@ -14,6 +14,21 @@ header("Content-type: text/html; charset=utf-8");
     <link rel='stylesheet' href='_/css/styles.css' type='text/css' media='all' />          
 </head>
 <body>
+	<header></header>
+    <nav>
+    	<a>Home</a>
+    	<a>Services</a>
+    	<a>About Me</a>
+    	<a>Portfolio</a>
+    	<a>Blog</a>
+    	<a>Contact</a>
+    </nav>
+    <main class="menu">
+    	<section></section>
+        <section></section>
+        <section></section>
+        <footer></footer>
+    </main>    
 	<script>
     (function() {
         function getScript(url,success){

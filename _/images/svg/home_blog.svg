@@ -1,0 +1,12 @@
+<svg width="640" height="480" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+
+ <g>
+  <title>Layer 1</title>
+  <rect fill="#ffffff" stroke="#ff0000" stroke-width="0" stroke-dasharray="null" stroke-linejoin="null" stroke-linecap="null" opacity="0.78" x="0" y="0" width="640" height="480" id="svg_2"/>
+  <path id="svg_1" d="m0,480l-480,480" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#ffffff"/>
+  <path id="svg_3" d="m-11.00788,491.99408l0,-494.98816l685.00049,494.98816l-685.00049,0z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#ffffff"/>
+  <path id="svg_4" d="m1061.43628,1203.45508l0,-48.99133l48.99915,48.99133l-48.99915,0z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#ffffff"/>
+  <path id="svg_5" d="m1101.37891,1157.19739l0,-19.99817l19.99817,19.99817l-19.99817,0z" stroke-linecap="null" stroke-linejoin="null" stroke-dasharray="null" stroke-width="0" stroke="#ff0000" fill="#ffffff"/>
+ </g>
+</svg>

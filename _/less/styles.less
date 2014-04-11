@@ -6,19 +6,92 @@
 @contact:#3791EE;
 @bg:#272727;
 
-@font-face{font-family:'Handbook';font-style:normal;font-weight:600;src:url('../fonts/Handbookpro/pfhandbookpro-medium-webfont.eot');src:local('?'),
-url('../fonts/Handbookpro/PFHandbookPro-Medium.oft') format('oft'),
-url('../fonts/Handbookpro/PFHandbookPro-Medium.ttf') format('truetype'),
-url('../fonts/Handbookpro/pfhandbookpro-medium-webfont.svg#webfontUYiaGIW4') format('svg');}
+@font-face{
+	font-family:'Handbook';
+	font-style:normal;
+	font-weight:600;
+	src:local('?'),
+	url('../fonts/Handbookpro/PFHandbookPro-Medium.oft') format('oft'),
+	url('../fonts/Handbookpro/PFHandbookPro-Medium.ttf') format('truetype'),
+	url('../fonts/Handbookpro/pfhandbookpro-medium-webfont.woff') format('woff'),
+	url('../fonts/Handbookpro/pfhandbookpro-medium-webfont.svg#webfontUYiaGIW4') format('svg'),
+	url('../fonts/Handbookpro/pfhandbookpro-medium-webfont.eot');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(http://themes.googleusercontent.com/static/fonts/opensans/v8/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+
 
 html {
 	overflow:hidden;
 }
 
+body {
+	-webkit-tap-highlight-color:transparent;
+	background:#000;
+	&#home {
+		a.active {
+			color:@home;
+		}
+		main {
+			background-color:@home;
+			section {
+				border-top-color:#EAF5F7;
+			}				
+		}
+	}
+	&#services {
+		a.active {
+			color:@services;
+		}
+		main {
+			background-color:@services;	
+		}		
+	}
+	&#about {
+		a.active {
+			color:@about;
+		}
+		main {
+			background-color:@about;	
+		}		
+	}
+	&#portfolio {
+		a.active {
+			color:@portfolio;
+		}
+		main {
+			background-color:@portfolio;	
+		}		
+	}
+	&#blog {
+		a.active {
+			color:@blog;
+		}
+		main {
+			background-color:@blog;	
+		}		
+	}
+	&#contact {
+		a.active {
+			color:@contact;
+		}
+		main {
+			background-color:@contact;	
+		}		
+	}					
+}
+
 header {
 	position:fixed;
+	left:0px;
+	right:0px;	
 	height:60px;
-	width:100%;
 	background-color:#000;
 	padding:0px 15px;	
 	color:#fff;
@@ -29,9 +102,22 @@ header {
 	box-shadow: 0px 0px 10px 0px #000;
 	-moz-transition:transform 0.25s ease-in-out;
 	-webkit-transition:-webkit-transform 0.25s ease-in-out;
+	transition: transform 0.25s ease-in-out;
 	&.menu {
 		-moz-transform: translate3d(-200px,0px,0);
 		-webkit-transform: translate3d(-200px,0px,0);
+		transform: translate3d(-200px,0px,0);
+		&:after {
+			-webkit-transform: rotate(360deg);
+			-moz-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			-o-transform: rotate(360deg);
+			transform: rotate(360deg);
+			opacity:1;			
+		}
+		&:active:after {
+			opacity:0.3;
+		}
 	}
 	&:before {
 		content: "";
@@ -42,6 +128,14 @@ header {
 		left: 15px;
 		background: url('../images/logo.png') no-repeat center top;
 		background-size:29px 30px;
+		opacity:0.3;
+		-moz-transition:all 0.75s ease-in-out;
+		-webkit-transition:all 0.75s ease-in-out;	
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		transform: rotate(360deg);		
 	}
 	&:after {
 		content: "";
@@ -52,7 +146,22 @@ header {
 		right: 15px;
 		background:#fff url("../images/menu.png") 0 0 repeat;
 		background-size:30px 30px;
+		opacity:0.3;
+		-moz-transition:all 0.25s ease-in-out;
+		-webkit-transition:all 0.25s ease-in-out;		
 	}
+	&:active:after {
+		opacity:1;
+		background-color:#fff;	
+	}
+	&.load:before {
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		transform: rotate(0deg);
+		opacity:1;
+	}	
 }
 
 nav {
@@ -68,19 +177,42 @@ nav {
 	right:0px;
 	background:#272727;
 	z-index:-1;
+	opacity:0;
+	-moz-transition:all 0.25s ease-in-out;
+	-webkit-transition:all 0.25s ease-in-out;	
 	a {
 		display:block;
 		font-size:11px;
 		text-transform:uppercase;
 		text-align:left;
-		line-height:58px;
+		line-height:48px;
 		border-bottom:1px solid #222;
 		border-top:1px solid #2a2a2a;
 		color:#939393;
-		font-family:'Open Sans', sans-serif;
-		text-indent:-100px;	
+		font-family:'Open Sans', sans-serif;	
 		letter-spacing:3px;
-		padding:0px 15px;
+		padding:0px 25px;
+		text-indent:25px;
+		
+		&:first-child {
+			font-size:0px;
+			line-height:55px;
+			height:59px;
+			border-top:none;
+			padding:0px;
+			&:before {
+				content:"\00d7";
+				color:#999;
+				font-size:40px;
+				line-height:59px;
+				height:59px;
+				display:block;
+				text-indent:20px;	
+			}
+			&:active:before {
+				color:#fff;
+			}
+		}
 		&:hover {
 			color:#fff;
 		}
@@ -89,11 +221,16 @@ nav {
 		}
 		&.menu {
 			color:#fff;
-				
+
 		}	
 	}
-	&.menu a {
-		text-indent:10px;
+	&.menu {
+		opacity:1;
+		a {
+			text-indent:0px;
+			-moz-transition:color 0.15s ease-in-out;
+			-webkit-transition:color 0.15s ease-in-out;				
+		}
 	}
 }
 
@@ -106,45 +243,30 @@ main {
 	overflow:auto;
 	text-align:center;
 	box-shadow: 0px 0px 10px 0px #000;
-	-moz-transition:-moz-transform 0.25s ease-in-out, background 15.00s ease-in-out;
-	-webkit-transition:-webkit-transform 0.25s ease-in-out, background 15.00s ease-in-out;
-	-webkit-overflow-scrolling:touch;
-	&.home {
-		background-color:@home;
-		section {
-			border-top-color:#EAF5F7;
-		}
-	}
-	&.services {
-		background:@services;
-	}
-	&.about {
-		background:@about;
-	}
-	&.portfolio {
-		background:@portfolio;
-	}
-	&.blog {
-		background:@blog;
-	}	
-	&.contact {
-		background:@contact;
-	}					
+	opacity:0;
+	-moz-transition:-moz-transform 0.25s ease-in-out, opacity 0.5s ease-in-out,  background-color 15s ease-in-out;
+	-webkit-transition:-webkit-transform 0.25s ease-in-out, opacity 0.5s ease-in-out,  background-color 15s ease-in-out;
+	transition: transform 0.25s ease-in-out, opacity 0.5s ease-in-out,  background-color 15s ease-in-out;
+	-webkit-overflow-scrolling:touch;				
 	&.menu {
 		-moz-transform: translate3d(-200px,0px,0);
-		-webkit-transform: translate3d(-200px,0px,0);		
+		-webkit-transform: translate3d(-200px,0px,0);	
+		transform:	translate3d(-200px,0px,0);
 	}
 	section {
 		border-top:1px solid #ccc;
 		padding:15px;
-		height:300px;
+		height:300px;					
 		&:first-child {
 			border-top:none;
 		}
 	}
+	&.load {
+		opacity:1;	
+	}
 	footer {
 		padding:15px 0px;
-		font-size:0px;
+		font-size:0px;		
 		img {
 			background:#fff;
 			margin:0px 7px;

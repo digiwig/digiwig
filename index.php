@@ -10,32 +10,32 @@ header("Content-type: text/html; charset=utf-8");
     <meta name="apple-mobile-web-app-title" content="Digiwig">
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:600,800">
 	<link rel='stylesheet' href='_/css/reset.css' type='text/css' media='all' />
-    <link rel='stylesheet' href='_/css/styles.css' type='text/css' media='all' />          
+    <link rel='stylesheet' href='_/css/styles.css' type='text/css' media='all' />       
 </head>
-<body ontouchstart="">
+<body id="home" ontouchstart="">
 	<header id="header">Freelance Web Developer</header>
     <nav>
-    	<a>Home</a>
+		<a id="close">digiwig</a>    
+    	<a class="active">Home</a>
     	<a>Services</a>
     	<a>About Me</a>
     	<a>Portfolio</a>
     	<a>Blog</a>
     	<a>Contact</a>
     </nav>
-    <main id="main" class="home">
+    <main id="main">
     	<section class="home_top"></section>
         <section class="home_services"></section>
         <section class="home_about"></section>
 		<section class="home_blog"></section>        
         <footer>
-            <a href="#"><img src="_/images/icons/email.png"/></a>      
-            <a href="#"><img src="_/images/icons/facebook.png"/></a>
-            <a href="#"><img src="_/images/icons/linkedin.png"/></a>
-            <a href="#"><img src="_/images/icons/googleplus.png"/></a>
-            <a href="#"><img src="_/images/icons/skype.png"/></a>
-            <a href="#"><img src="_/images/icons/instagram.png"/></a>
+            <a href="#"><img width="8%" height="auto" src="_/images/icons/email.png"/></a>      
+            <a href="#"><img width="8%" height="auto" src="_/images/icons/facebook.png"/></a>
+            <a href="#"><img width="8%" height="auto" src="_/images/icons/linkedin.png"/></a>
+            <a href="#"><img width="8%" height="auto" src="_/images/icons/googleplus.png"/></a>
+            <a href="#"><img width="8%" height="auto" src="_/images/icons/skype.png"/></a>
+            <a href="#"><img width="8%" height="auto" src="_/images/icons/instagram.png"/></a>
         </footer>
     </main>    
 	<script>

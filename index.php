@@ -30,12 +30,12 @@ header("Content-type: text/html; charset=utf-8");
         <section class="home_about"></section>
 		<section class="home_blog"></section>        
         <footer>
-            <a href="#"><img width="8%" height="auto" src="_/images/icons/new/email.png"/></a>      
-            <a href="#"><img width="8%" height="auto" src="_/images/icons/new/facebook.png"/></a>
-            <a href="#"><img width="8%" height="auto" src="_/images/icons/new/linkedin.png"/></a>
-            <a href="#"><img width="8%" height="auto" src="_/images/icons/new/googleplus.png"/></a>
-            <a href="#"><img width="8%" height="auto" src="_/images/icons/new/skype.png"/></a>
-            <a href="#"><img width="8%" height="auto" src="_/images/icons/new/instagram.png"/></a>
+            <a href="#"><img width="8%" height="auto" src="_/images/icons/email.png"/></a>      
+            <a href="#"><img width="8%" height="auto" src="_/images/icons/facebook.png"/></a>
+            <a href="#"><img width="8%" height="auto" src="_/images/icons/linkedin.png"/></a>
+            <a href="#"><img width="8%" height="auto" src="_/images/icons/googleplus.png"/></a>
+            <a href="#"><img width="8%" height="auto" src="_/images/icons/skype.png"/></a>
+            <a href="#"><img width="8%" height="auto" src="_/images/icons/instagram.png"/></a>
         </footer>
     </main>    
 	<script>

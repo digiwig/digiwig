@@ -23,6 +23,7 @@ header("Content-type: text/html; charset=utf-8");
     	<a>Portfolio</a>
     	<a>Blog</a>
     	<a>Contact</a>
+        <a href="mailto:mark@digiwig.com"><img src="_/images/icons/mailto.png" width="15" height="15"/></a>
     </nav>
     <main id="main">
     	<section class="home_top"></section>
@@ -36,8 +37,8 @@ header("Content-type: text/html; charset=utf-8");
             <a href="#"><img width="8%" height="auto" src="_/images/icons/googleplus.png"/></a>
             <a href="#"><img width="8%" height="auto" src="_/images/icons/skype.png"/></a>
             <a href="#"><img width="8%" height="auto" src="_/images/icons/instagram.png"/></a>
-        </footer>
-    </main>    
+		</footer>
+</main>    
 	<script>
     (function() {
         function getScript(url,success){

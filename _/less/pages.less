@@ -124,7 +124,19 @@
 /* tablet portrait */
 @media only screen 
 and (min-width : 768px) {
+	main {
+		&.menu {
+			.home_top {
+				h1 {
+					line-height:6vmax !important;
+					font-size:6vmax !important;
+				}
+			}
+		}
+	}
+
 	#home {
+
 		p {
 			span {
 				display:inline-block;
@@ -140,6 +152,9 @@ and (min-width : 768px) {
 			}
 			
 		}
+		h2 {
+			letter-spacing:8px;
+		}		
 	}
 }
 
@@ -173,9 +188,6 @@ and (min-width : 1024px) {
 				letter-spacing:3px;
 				margin-bottom:-4px;
 			}
-		}
-		h2 {
-			letter-spacing:8px;
 		}
 	}
 }

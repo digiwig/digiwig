@@ -1,0 +1,182 @@
+.italicSubText {
+	color:#0e878b;
+	font-family:'PT Serif';
+	font-style:italic;
+	font-size:16px;
+	display:block;
+	-moz-transition:color 15s ease-in-out;
+	-webkit-transition:color 15s ease-in-out;
+	transition: color 15s ease-in-out;	
+}
+
+/* CUSTOM PAGE STYLES */
+
+/* HOME */
+
+#home {
+	section {
+		background-repeat:no-repeat;
+		background-size:100% 100%;
+		-o-background-size:100% 100%;
+		-webkit-background-size:100% 100%;
+	}
+	.home_top {
+		background-image:url(../images/svg/home_top.svg);;
+		h1 {
+			font-family:'Open Sans', sans-serif;
+			text-transform:uppercase;
+			font-weight:800;
+			line-height:6.8vmax;
+			letter-spacing:0px;
+			font-size:6.8vmax;	
+			margin-top:-8px;	
+		}
+	}
+	.home_services {
+		background-image:url(../images/svg/home_services.svg);
+		figure {
+			width:16%;
+			display:inline-block;
+			font-size:0px;
+			margin:0px 10px 35px 10px;
+			max-width:200px;
+			position:relative;
+			a {
+				background:transparent;
+				padding:0px;
+				display:inline-block;
+				height:auto;
+				line-height:inherit;
+				text-transform:uppercase;
+				text-decoration:none;
+				border-radius:none;
+				margin-top:0px;
+				margin-bottom:0px;
+				
+				img {
+					width:100%;
+					max-width:150px;
+					margin-bottom:0px;
+				}
+			}
+			
+			figcaption {
+				font-family:'Open Sans', sans-serif;
+				color:#000;
+				display:block;
+				font-size:12px;
+				margin-top:15px;
+				text-transform:uppercase;
+				-webkit-text-stroke: 0.25px;
+				white-space:nowrap;
+				margin-bottom:-12px;
+			}
+			
+		}		
+	}
+	
+	.home_about {
+		background-image:url(../images/svg/home_about.svg);
+		border-top:1px solid #eee;
+		img {
+			border-radius:10px;
+		}
+	}
+	
+	.home_blog {
+		background-image:url(../images/svg/home_blog.svg);
+		h3 {
+			font-family:'Open Sans', sans-serif;
+			padding:0px;
+			text-transform:uppercase;
+			display:block;
+			font-weight:800;
+			font-size:35px;
+			line-height:35px;
+			letter-spacing:0px;
+		}		
+	}
+	p {
+		.italicSubText;
+		span {
+			font-size:13px;
+			display:block;
+		}		
+	}
+	h2 {
+		font-family:'Open Sans', sans-serif;
+		font-size:14px;
+		font-weight:400;
+		text-transform:uppercase;
+		letter-spacing:2px;
+		text-align:center;
+	}
+	
+	h2 + p {
+		
+	}
+
+}
+
+
+/* MEDIA QUERIES */
+
+/* tablet portrait */
+@media only screen 
+and (min-width : 768px) {
+	#home {
+		p {
+			span {
+				display:inline-block;
+				font-size:16px;
+				&:first-child {
+					display:block;
+				}
+				&:last-child {
+					&:before {
+						content: "\00a0/\00a0";
+					}
+				}
+			}
+			
+		}
+	}
+}
+
+/* desktops and tablets (landscape) */
+@media only screen 
+and (min-width : 1024px) {
+	#home {
+		/* custom page styles */
+		.home_top {
+			h1 {
+				font-size:60px;
+				line-height:60px;
+				margin-top:-11px;
+				margin-bottom:25px;
+			}
+		}
+		.home_about {
+			img {
+				border-radius:35px;
+			}
+		}	
+		.home_blog {
+			h3 {
+				font-size:60px;
+				line-height:60px;
+				margin-top:-11px;
+			}		
+		}	
+		.home_services {
+			figcaption {
+				letter-spacing:3px;
+				margin-bottom:-4px;
+			}
+		}
+		h2 {
+			letter-spacing:8px;
+		}
+	}
+}
+

@@ -9,7 +9,6 @@ a{background:transparent;text-decoration:none; color:#000; cursor:pointer;-webki
 a:active,a:hover{outline:0}
 abbr[title]{border-bottom:1px dotted}
 dfn{font-style:italic}
-h1{font-size:2em;margin:.67em 0}
 mark{background:#ff0;color:#000}
 small{font-size:80%}
 sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
@@ -17,7 +16,7 @@ sup{top:-.5em}
 sub{bottom:-.25em}
 img{border:0}
 svg:not(:root){overflow:hidden}
-figure{margin:1em 40px}
+figure{margin:0px 0px}
 hr{-moz-box-sizing:content-box;-webkit-box-sizing:content-box;height:0}
 code,kbd,pre,samp{font-family:monospace, monospace;font-size:1em}
 button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}

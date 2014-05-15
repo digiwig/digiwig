@@ -18,12 +18,12 @@ header("Content-type: text/html; charset=utf-8");
 	<header id="header">Freelance Web Developer</header>
     <nav>
 		<a id="close">digiwig</a>    
-    	<a class="active">Home</a>
-    	<a>Services</a>
-    	<a>About Me</a>
-    	<a>Portfolio</a>
-    	<a>Blog</a>
-    	<a>Contact</a>
+    	<a href="index.php" class="active">Home</a>
+    	<a href="services.php">Services</a>
+    	<a href="about.php" >About Me</a>
+    	<a href="portfolio.php" >Portfolio</a>
+    	<a href="blog.php" >Blog</a>
+    	<a href="contact.php" >Contact</a>
         <a href="mailto:mark@digiwig.com"><img src="_/images/icons/mailto.png" width="15" height="15"/></a>
     </nav>
     <main id="main">
@@ -37,23 +37,23 @@ header("Content-type: text/html; charset=utf-8");
         	<h2>Services</h2>
             <p>The short and sweet of what I do,<br/>click through to read a little bit more...</p>
             <figure>
-            	<a href="/services#Web" title="Web"><img width="auto" height="auto" src="_/images/web.png" alt="Web"/></a>
-            	<figcaption>Web</figcaption>
+                <a href="/services.php#web" title="Web"><img width="auto" height="auto" src="_/images/web.png" alt="Web"/></a>
+                <figcaption>Web</figcaption>
             </figure>
             <figure>
-            	<a href="/services#Support" title="Support"><img width="auto" height="auto" src="_/images/support.png" alt="Support"/></a>
-            	<figcaption>Support</figcaption>
+                <a href="/services.php#support" title="Support"><img width="auto" height="auto" src="_/images/support.png" alt="Support"/></a>
+                <figcaption>Support</figcaption>
             </figure>
             <figure>
-            	<a href="/services#SEO" title="SEO"><img width="auto" height="auto" src="_/images/seo.png" alt="SEO"/></a>
-            	<figcaption>SEO</figcaption>
+                <a href="/services.php#seo" title="SEO"><img width="auto" height="auto" src="_/images/seo.png" alt="SEO"/></a>
+                <figcaption>SEO</figcaption>
             </figure>
             <figure>
-            	<a href="/services#Apps" title="Apps"><img width="auto" height="auto" src="_/images/applications.png" alt="Apps"/></a>
-            	<figcaption>Apps</figcaption>
+                <a href="/services.php#apps" title="Apps"><img width="auto" height="auto" src="_/images/applications.png" alt="Apps"/></a>
+                <figcaption>Apps</figcaption>
             </figure>
             <br/>
-            <a class="button">More</a>
+            <a class="button" href="services.php">More</a>
         </section>
         <section class="home_about">
         	<h2>About Me</h2>
@@ -75,6 +75,7 @@ header("Content-type: text/html; charset=utf-8");
             <a href="#"><img width="8%" height="auto" src="_/images/icons/skype.png"/></a>
             <a href="#"><img width="8%" height="auto" src="_/images/icons/instagram.png"/></a>
 		</footer>
+
 </main>    
 	<script>
     (function() {

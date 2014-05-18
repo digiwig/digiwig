@@ -51,8 +51,6 @@ $(document).ready(function() {
 		id = window.location.hash.replace('#', '');
 		figure = $("figure#"+id);
 		figure.trigger("touchend");
-	} else {
-		$("figure#web").trigger("touchend");
 	}
 
 	   

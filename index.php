@@ -39,19 +39,19 @@ header("Content-type: text/html; charset=utf-8");
             <figure>
                 <a href="/services.php#web" title="Web"><img width="auto" height="auto" src="_/images/web.png" alt="Web"/></a>
                 <figcaption>Web</figcaption>
-            </figure>
+          </figure>
             <figure>
                 <a href="/services.php#support" title="Support"><img width="auto" height="auto" src="_/images/support.png" alt="Support"/></a>
                 <figcaption>Support</figcaption>
-            </figure>
+          </figure>
             <figure>
                 <a href="/services.php#seo" title="SEO"><img width="auto" height="auto" src="_/images/seo.png" alt="SEO"/></a>
                 <figcaption>SEO</figcaption>
-            </figure>
+          </figure>
             <figure>
                 <a href="/services.php#apps" title="Apps"><img width="auto" height="auto" src="_/images/applications.png" alt="Apps"/></a>
                 <figcaption>Apps</figcaption>
-            </figure>
+          </figure>
             <br/>
             <a class="button" href="services.php">More</a>
         </section>
@@ -75,8 +75,7 @@ header("Content-type: text/html; charset=utf-8");
             <a href="#"><img width="8%" height="auto" src="_/images/icons/skype.png"/></a>
             <a href="#"><img width="8%" height="auto" src="_/images/icons/instagram.png"/></a>
 		</footer>
-
-</main>    
+	</main>    
 	<script>
     (function() {
         function getScript(url,success){

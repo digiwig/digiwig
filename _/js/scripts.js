@@ -14,7 +14,7 @@ $(document).ready(function() {
 						   
 
 	/* SERVICES PAGE BOXES */
-	var dragging = false;
+/*	var dragging = false;
 	$("#services figure").each(function() {
 		var id = $(this).attr("id");
 		document.getElementById(id).addEventListener("touchmove", function(event){dragging = true;}, false);
@@ -51,7 +51,7 @@ $(document).ready(function() {
 		id = window.location.hash.replace('#', '');
 		figure = $("figure#"+id);
 		figure.trigger("touchend");
-	}
+	}*/
 
 	   
 
@@ -95,11 +95,11 @@ $(document).ready(function() {
 	setInterval(function() {
 		var colour = '#'+Math.floor((Math.random()*16777215) + 127).toString(16);
 		//var colour = '#'+colours[Math.floor(Math.random() * colours.length)];
-		$("p").css("color", ColorLuminance(colour, -0.5));
+		//$("p").css("color", ColorLuminance(colour, -0.5));
 		$("header").css("background-color", ColorLuminance(colour, -0.7));
 		$("a.active").css("color", ColorLuminance(colour, 0.5));
-		$(main).css("background-color", colour);
-	}, 30000);
+		$(main).css("background-color", colour).css("border-color", colour);
+	}, 15000);
 
 });	
 

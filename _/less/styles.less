@@ -55,6 +55,14 @@
   src: local('PT Serif Italic'), local('PTSerif-Italic'), url(http://themes.googleusercontent.com/static/fonts/ptserif/v6/03aPdn7fFF3H6ngCgAlQzBsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oswald Regular'), local('Oswald-Regular'), url(http://themes.googleusercontent.com/static/fonts/oswald/v8/-g5pDUSRgvxvOl5u-a_WHw.woff) format('woff');
+}
+
+
 .button {
 	background:#000;
 	font-family:'Open Sans',sans-serif;
@@ -82,67 +90,6 @@ html {
 body {
 	-webkit-tap-highlight-color:transparent;
 	background:#000;
-	#loader {
-		position:absolute;
-		left:0px;
-		right:0px;
-		top:0px;
-		bottom:0px;
-		background:#272727;
-		font-size:14px;
-		color:#fff;
-		z-index:9999;
-			transition-property: all;
-			transition-duration: 5.5s;
-			transition-timing-function: cubic-bezier(0, 1, 0.5, 1);			
-		.wait {
-				position:relative;
-				background: url('../images/logo.png') no-repeat center center;
-				background-size:50px 52px;
-				width:100%;
-				height:100%;
-				animation-name: grow;
-				animation-duration: @load;
-				animation-iteration-count: infinite;
-				animation-timing-function: linear;
-				-webkit-animation-name: grow;
-				-webkit-animation-duration: @load;
-				-webkit-animation-iteration-count: infinite;
-				-webkit-animation-timing-function: linear;
-				@-webkit-keyframes grow {
-					0% {
-						background-size:25px 26px;
-						opacity:0;
-					}
-					50% {
-						background-size:50px 52px;
-						opacity:1;
-					}	
-					100% {
-						background-size:25px 26px;				
-						opacity:0;
-					}	
-				}
-				@keyframes grow {
-					0% {
-						background-size:25px 26px;
-						opacity:0;
-					}
-					50% {
-						background-size:50px 52px;
-						opacity:1;
-					}	
-					100% {
-						background-size:25px 26px;				
-						opacity:0;
-					}
-				}				
-		}
-	}
-	
-
-	
-	
 	&#home {
 		a.active {
 			color:@home;
@@ -155,18 +102,17 @@ body {
 	&#services {
 		a.active {
 			color:@services;
-			.colorShift;			
-			
+			.colorShift;
 		}
 		main {
-			background-color:@services;	
+			background-color:@services;
+			border-color:@services;
 		}		
 	}
 	&#about {
 		a.active {
 			color:@about;
-			.colorShift;			
-			
+			.colorShift;
 		}
 		main {
 			background-color:@about;	
@@ -175,8 +121,7 @@ body {
 	&#portfolio {
 		a.active {
 			color:@portfolio;
-			.colorShift;			
-			
+			.colorShift;
 		}
 		main {
 			background-color:@portfolio;	
@@ -185,8 +130,7 @@ body {
 	&#blog {
 		a.active {
 			color:@blog;
-			.colorShift;			
-			
+			.colorShift;
 		}
 		main {
 			background-color:@blog;	
@@ -195,8 +139,7 @@ body {
 	&#contact {
 		a.active {
 			color:@contact;
-			.colorShift;			
-			
+			.colorShift;
 		}
 		main {
 			background-color:@contact;	
@@ -365,9 +308,9 @@ main {
 	text-align:center;
 	opacity:0;
 	padding-top:60px;
-	-moz-transition:-moz-transform 0.25s ease-in-out, opacity 0.5s ease-in-out, background-color @shift ease-in-out;
-	-webkit-transition:-webkit-transform 0.25s ease-in-out, opacity 0.5s ease-in-out, background-color @shift ease-in-out;
-	transition: transform 0.25s ease-in-out, opacity 0.5s ease-in-out, background-color @shift ease-in-out;
+	-moz-transition:-moz-transform 0.25s ease-in-out, opacity 0.5s ease-in-out, background-color @shift ease-in-out, border-color @shift ease-in-out;
+	-webkit-transition:-webkit-transform 0.25s ease-in-out, opacity 0.5s ease-in-out, background-color @shift ease-in-out, border-color @shift ease-in-out;
+	transition: transform 0.25s ease-in-out, opacity 0.5s ease-in-out, background-color @shift ease-in-out, border-color @shift ease-in-out;
 	-webkit-overflow-scrolling:touch;				
 	&.menu {
 		-moz-transform: translate3d(-200px,0px,0);
@@ -401,6 +344,9 @@ main {
 /* tablet portrait */
 @media only screen 
 and (min-width : 768px) {
+
+	@padding:40px;
+
 	header {
 		opacity:1;
 		&.menu {
@@ -421,8 +367,8 @@ and (min-width : 768px) {
 			right:200px;
 		}
 		section {
-			padding:@paddingMax;
-			h1, h2, h3, aside, a, img, p, article {margin-bottom:@paddingMax;}
+			padding:@padding;
+			h1, h2, h3, aside, a, img, p, article {margin-bottom:@padding;}
 		}		
 		footer {
 		padding:@paddingMax 0px;
